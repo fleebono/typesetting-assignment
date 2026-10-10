@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR styling/typesetting CSS code BELOW HERE */
+
+* {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p,
+li,
+a {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 2rem;
+  letter-spacing: .2rem;
+  word-spacing: .2rem;
+  margin: 30px 0;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+h1,
+h2 {
+  letter-spacing: .3rem;
+  font-family: 'Graduate', cursive;
+}
+
+section :is(h1, h2 + p) {
+  text-indent: 1.5rem;
+}
+
+a {
+  color: #a66;
+}
+
+a:hover {
+  color: #00bdff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0040ff;
+}
+
+a:focus {
+  color: #f77c08;
+  text-decoration: none;
+  outline: none;
+}
+
+a:active {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+a::after {
+  content: "";
+  display: inline-block;
+  background-image: url('external-link-52.png');
+  margin-left: .2rem;
+  height: 1rem;
+  width: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+li {
+  line-height: 2rem;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+  letter-spacing: .1rem;
+}
+
+ol {
+  list-style-type: upper-alpha;
+}
+
+ul {
+  list-style-type: square;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px 20px;
+  width: 100%;
+  border: 1px solid #a66;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav li a::after {
+  content: none;
+}
